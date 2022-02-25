@@ -17,6 +17,7 @@ public class TestConverter {
         String actual = converter.morseConvert(letter);
 
         assertEquals("***-", actual);
+
     }
 
     @Test
@@ -30,6 +31,7 @@ public class TestConverter {
         String actual = converter.morseConvert(letter);
 
         assertEquals("V", actual);
+
     }
 
     @Test
@@ -43,6 +45,7 @@ public class TestConverter {
         String actual = converter.morseConvert(letter);
 
         assertEquals("You wrote something wrong", actual);
+
     }
 
 
