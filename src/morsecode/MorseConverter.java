@@ -10,12 +10,20 @@ public class MorseConverter {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Try out the morseconverter:");
+        System.out.println("Try out my morseconverter. If you write stop, it will end.");
 
         while (true) {
-            System.out.println(converter.morseConvert(scan.nextLine()));
+            //Felhantering - göra om små bokstäver till stora
+            String input = scan.nextLine().toUpperCase();
+
+            if (input.equals("STOP")) {
+                break;
+            }
+
+            System.out.println(converter.morseConvert(input));
 
         }
+
 
     }
 

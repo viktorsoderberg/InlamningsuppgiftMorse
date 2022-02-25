@@ -131,17 +131,13 @@ public class Converter {
 
     public String morseConvert(String letter) {
 
-        //Felhantering - göra om små bokstäver till stora
-        letter = letter.toUpperCase();
-
-        String userInput = morseCode.get(letter);
+        String input = morseCode.get(letter);
 
         //Felhantering - något skrivs in som inte kan översättas
-        if (userInput == null) {
-            userInput = "You wrote something wrong";
+        if (input == null) {
+            input = "You wrote something wrong";
         }
-
-        return userInput;
+        return input;
 
     }
 
